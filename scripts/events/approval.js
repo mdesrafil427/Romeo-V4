@@ -25,7 +25,7 @@ module.exports = {
 
     if (!threads.includes(groupId) && event.logMessageType === "log:subscribe") {
       await message.send({
-        body: `❎ | You Added R0M30-BOT Without Permission !!\nBot will leave this group between 20 seconds🏃‍♂\nInbox my owner to get approval❤‍🔥\n\n✧Owner FB ➠www.facebook.com/mdromeoislamrasel.5  !!\n✧Join ROMEO-BOT Support GC to Contact With Admin's !!\n\n✧Type ${p}supportgc within 20 seconds.`,
+        body: `❎ | You Added R0M30-BOT Without Permission !!\n\nBot will leave this group between 20 seconds🏃‍♂\n\nInbox my owner to get approval❤‍🔥\n\n✧Owner FB ➠www.facebook.com/mdromeoislamrasel.5  !!\n\n✧Join ROMEO-BOT Support GC to Contact With Admin's !!\n\n✧Type ${p}supportgc within 20 seconds.`,
         attachment: await getStreamFromURL("https://i.imgur.com/eEBob1x.jpeg")
       });
     }
