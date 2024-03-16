@@ -25,13 +25,13 @@ module.exports = {
 
     if (!threads.includes(groupId) && event.logMessageType === "log:subscribe") {
       await message.send({
-        body: `❎ | You Added R0M30-BOT Without Permission !!\n\nBot will leave this group between 20 seconds🏃‍♂\n\nInbox my owner to get approval❤‍🔥\n\n✧Owner FB ➠www.facebook.com/mdromeoislamrasel.5  !!\n\n✧Join ROMEO-BOT Support GC to Contact With Admin's !!\n\n✧Type ${p}supportgc within 20 seconds.`,
+        body: `❎ | You Added R0M30-BOT Without Permission !!\n\nBot will leave this group between 30 seconds🏃‍♂\n\nInbox my owner to get approval❤‍🔥\n\n✧Owner FB ➠www.facebook.com/mdromeoislamrasel.5  !!\n\n✧Join ROMEO-BOT Support GC to Contact With Admin's !!\n\n✧Type ${p}supportgc within 30 seconds.`,
         attachment: await getStreamFromURL("https://i.imgur.com/eEBob1x.jpeg")
       });
     }
 
     if (!threads.includes(groupId) && event.logMessageType === "log:subscribe") {
-      await new Promise((resolve) => setTimeout(resolve, 20000)); // Delay of 1 seconds
+      await new Promise((resolve) => setTimeout(resolve, 30000)); // Delay of 1 seconds
       await api.sendMessage(
         `====== Approval ======\n\n🍁 | Group:- ${name}\n🆔 | TID:- ${groupId}\n☣️ | Event:- The Group Need Approval`,
         uid,
